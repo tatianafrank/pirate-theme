@@ -22,8 +22,8 @@ CSS table of content
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @font-face {
-  font-family: 'Scary';
-  src:  url('../fonts/scary.ttf') format('truetype')
+  font-family: 'Pirate';
+  src:  url('../fonts/viking.ttf') format('truetype')
 }
 
 /*--------------------------------
@@ -57,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Scary", sans-serif;
+  font-family: "Pirate", sans-serif;
   color: #FFFFFF;
   margin: 0 0 26px;
   line-height: 1.35;
@@ -92,7 +92,7 @@ h6 {
 }
 
 .sec-heading .sub-title {
-  color: #A3FF12;
+  color: #d4af37;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -123,7 +123,7 @@ a:active,
 a:hover {
   text-decoration: none;
   outline: 0 none;
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 ul {
@@ -221,7 +221,7 @@ body .search-modal .close {
 }
 
 body .search-modal .close:hover {
-  color: #A3FF12 !important;
+  color: #d4af37 !important;
   opacity: 1 !important;
 }
 
@@ -262,7 +262,7 @@ body .modal-backdrop {
   z-index: 9;
   overflow: hidden;
   padding: 170px 0 225px;
-  background: url("../images/bg/banner-bg.png");
+  background: url("../images/pirate-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -283,6 +283,12 @@ body .modal-backdrop {
 
 .banner-content .banner-title {
   margin: 0 0 20px;
+  color: red;
+  text-shadow: 4px 4px 0px black;
+}
+
+.banner-content .description {
+  text-transform: capitalize;
 }
 
 .banner-content .sub-title {
@@ -295,6 +301,7 @@ body .modal-backdrop {
   font-size: 18px;
   font-weight: 600;
   margin: 0 0 40px;
+  color: red;
 }
 
 /*--- Gamfi About Section CSS ---*/
@@ -544,8 +551,8 @@ body .modal-backdrop {
 .hover-shape-border .shadow-1 {
   top: 0px;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-100%, #F82552), color-stop(64%, rgba(21, 22, 37, 0)));
-  background: linear-gradient(to bottom, #F82552 -100%, rgba(21, 22, 37, 0) 64%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-100%, #d4af37), color-stop(64%, rgba(21, 22, 37, 0)));
+  background: linear-gradient(to bottom, #d4af37 -100%, rgba(21, 22, 37, 0) 64%);
   width: 5px;
   height: 200px;
 }
@@ -554,8 +561,8 @@ body .modal-backdrop {
 .hover-shape-border .shadow-2 {
   top: 0px;
   left: 5px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(-100%, #F82552), color-stop(64%, rgba(21, 22, 37, 0)));
-  background: linear-gradient(to right, #F82552 -100%, rgba(21, 22, 37, 0) 64%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(-100%, #d4af37), color-stop(64%, rgba(21, 22, 37, 0)));
+  background: linear-gradient(to right, #d4af37 -100%, rgba(21, 22, 37, 0) 64%);
   width: 200px;
   height: 5px;
 }
@@ -566,8 +573,8 @@ body .modal-backdrop {
   right: 0;
   width: 5px;
   height: 200px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(-100%, #A3FF12), color-stop(64%, rgba(21, 22, 37, 0)));
-  background: linear-gradient(to top, #A3FF12 -100%, rgba(21, 22, 37, 0) 64%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-100%, #d4af37), color-stop(64%, rgba(21, 22, 37, 0)));
+  background: linear-gradient(to top, #d4af37 -100%, rgba(21, 22, 37, 0) 64%);
 }
 
 .active-shape .shadow-4,
@@ -576,8 +583,8 @@ body .modal-backdrop {
   right: 5px;
   width: 200px;
   height: 5px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(-100%, #A3FF12), color-stop(64%, rgba(21, 22, 37, 0)));
-  background: linear-gradient(to left, #A3FF12 -100%, rgba(21, 22, 37, 0) 64%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(-100%, #d4af37), color-stop(64%, rgba(21, 22, 37, 0)));
+  background: linear-gradient(to left, #d4af37 -100%, rgba(21, 22, 37, 0) 64%);
 }
 
 .hover-shape-border .border-shadow {
@@ -605,9 +612,9 @@ body .modal-backdrop {
 
 /*--- Gamfi Project Section CSS ---*/
 .gamfi-project-section {
-  background: url("../images/bg/project-bg.jpg");
+  background: url("../images/stripe-bg.png");
   padding-top: 115px;
-  padding-bottom: 105px;
+  padding-bottom: 200px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1160,7 +1167,7 @@ body .modal-backdrop {
 }
 
 .gamfi-previous-section .project-item .project-media .social-icon-list li a i:hover {
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 .gamfi-previous-section .calender-image-area {
@@ -1363,9 +1370,10 @@ body .modal-backdrop {
 
 /*--- Gamfi Team Section CSS ---*/
 .gamfi-team-section {
-  background: url("../images/bg/team-bg.jpg");
+  background: url("../images/pirate-pattern.png");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: top left;
+  background-size: cover;
   background-color: #090A1A;
 }
 
@@ -1555,7 +1563,7 @@ body .modal-backdrop {
   font-size: 50px;
   line-height: 70px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #d4af37;
   margin-bottom: 0px;
 }
 
@@ -2836,7 +2844,7 @@ body .modal-backdrop {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 .no-border {
@@ -2903,7 +2911,7 @@ body .modal-backdrop {
 .roadmap_list_sect .check_icon_bg {
   height: 21px;
   width: 21px;
-  background: #A3FF12;
+  background: #d4af37;
   border-radius: 50%;
   position: absolute;
   top: -30px;
@@ -3024,6 +3032,10 @@ body .modal-backdrop {
   }
 }
 
+h2.title {
+  color: #d4af37;
+  text-shadow: 4px 4px 0px black;
+}
 .sc_banner_v3_left h2 {
   max-width: 499px;
   width: 100%;
@@ -3807,7 +3819,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .banner-bottom-content .social-icon-list li a:hover {
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 .project-details-conent .project-item .date-listing {
@@ -3847,7 +3859,7 @@ body .modal-backdrop {
 
 .project-details-conent .project-item .date-listing li:hover button, .project-details-conent .project-item .date-listing li.active button {
   background: #303244;
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 .project-details-conent .project-item .date-listing li a {
@@ -3858,7 +3870,7 @@ body .modal-backdrop {
 .project-details-conent .project-item .date-listing li a:hover {
   background: #313245;
   border-color: #313245;
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 .project-details-conent .project-item .date-listing li input {
@@ -3881,7 +3893,7 @@ body .modal-backdrop {
 .project-details-conent .project-item .date-listing li.active,
 .project-details-conent .project-item .date-listing li input:checked + label {
   background: #303244;
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 .project-details-conent .project-item .date-listing li + li {
@@ -3952,7 +3964,7 @@ body .modal-backdrop {
 
 .project-details-conent .project-item .big-text {
   font-size: 30px;
-  color: #A3FF12;
+  color: #d4af37;
   font-family: "Russo One", sans-serif;
   position: absolute;
   right: 0;
@@ -4060,7 +4072,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .project-media .social-icon-list li a:hover {
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 .project-video-area {
@@ -4176,7 +4188,7 @@ body .modal-backdrop {
 }
 
 .project-details-conent .project-content .project-price .springGreen::before {
-  background: #A3FF12;
+  background: #d4af37;
 }
 
 .project-details-conent .project-content .project-price .darkturquoise::before {
@@ -4221,7 +4233,7 @@ body .modal-backdrop {
 }
 
 .project-summary-menu .nav button.active {
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 .project-summary-menu .nav button.active img {
@@ -4700,7 +4712,7 @@ body .gamfi-explore-content .project-item {
 }
 
 .total_rised_progress_bar.progess32 {
-  background: #A3FF12;
+  background: #d4af37;
   height: 100%;
   width: 32%;
   -webkit-animation-name: Progressing32;
@@ -4728,7 +4740,7 @@ body .gamfi-explore-content .project-item {
 }
 
 .total_rised_progress_bar.Progress65 {
-  background: #A3FF12;
+  background: #d4af37;
   height: 100%;
   width: 65%;
   -webkit-animation-name: Progressing65;
@@ -4756,7 +4768,7 @@ body .gamfi-explore-content .project-item {
 }
 
 .total_rised_progress_bar.Progress89 {
-  background: #A3FF12;
+  background: #d4af37;
   height: 100%;
   width: 89%;
   -webkit-animation-name: Progressing89;
@@ -4784,7 +4796,7 @@ body .gamfi-explore-content .project-item {
 }
 
 .total_rised_progress_bar.progress32 {
-  background: #A3FF12;
+  background: #d4af37;
   height: 100%;
   width: 32%;
   -webkit-animation-name: Progressing32;
@@ -5015,7 +5027,7 @@ body .gamfi-explore-content .project-item {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #A3FF12;
+  color: #d4af37;
   margin-bottom: 10px;
 }
 
@@ -5190,7 +5202,7 @@ body .gamfi-explore-content .project-item {
 }
 
 .project_summary_tabs_sect .project-summary-tab-btn.active a, .project_summary_tabs_sect .project-summary-tab-btn:hover a {
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 .project_summary_tabs_sect .project-summary-tab-btn img {
@@ -5231,7 +5243,7 @@ body .gamfi-explore-content .project-item {
 
 .project_clasic_custom_progress_sect .progress_bg .progress_bar.progress_bar82 {
   height: 100%;
-  background: #A3FF12;
+  background: #d4af37;
   -webkit-animation-name: Progressing82;
           animation-name: Progressing82;
   -webkit-animation-duration: 3s;
@@ -5259,7 +5271,7 @@ body .gamfi-explore-content .project-item {
 
 .project_clasic_custom_progress_sect .progress_bg .progress_bar.progress_bar92 {
   height: 100%;
-  background: #A3FF12;
+  background: #d4af37;
   -webkit-animation-name: Progressing92;
           animation-name: Progressing92;
   -webkit-animation-duration: 4s;
@@ -5287,7 +5299,7 @@ body .gamfi-explore-content .project-item {
 
 .project_clasic_custom_progress_sect .progress_bg .progress_bar.progress_bar100 {
   height: 100%;
-  background: #A3FF12;
+  background: #d4af37;
   -webkit-animation-name: Progressing100;
           animation-name: Progressing100;
   -webkit-animation-duration: 4s;
@@ -5315,7 +5327,7 @@ body .gamfi-explore-content .project-item {
 
 .project_clasic_custom_progress_sect .progress_bg .progress_bar.progress_bar36 {
   height: 100%;
-  background: #A3FF12;
+  background: #d4af37;
   -webkit-animation-name: Progressing36;
           animation-name: Progressing36;
   -webkit-animation-duration: 4s;
@@ -5343,7 +5355,7 @@ body .gamfi-explore-content .project-item {
 
 .project_clasic_custom_progress_sect .progress_bg .progress_bar.progress_bar65 {
   height: 100%;
-  background: #A3FF12;
+  background: #d4af37;
   -webkit-animation-name: Progressing65;
           animation-name: Progressing65;
   -webkit-animation-duration: 4s;
@@ -5362,7 +5374,7 @@ body .gamfi-explore-content .project-item {
 
 .project_clasic_custom_progress_sect .progress_bg .progress_bar.progress_bar93 {
   height: 100%;
-  background: #A3FF12;
+  background: #d4af37;
   -webkit-animation-name: Progressing93;
           animation-name: Progressing93;
   -webkit-animation-duration: 4s;
@@ -6055,8 +6067,8 @@ body .gamfi-explore-content .project-item {
   right: 0;
   width: 5px;
   height: 200px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(-100%, #a3ff12), color-stop(64%, rgba(21, 22, 37, 0)));
-  background: linear-gradient(to top, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-100%, #d4af37), color-stop(64%, rgba(21, 22, 37, 0)));
+  background: linear-gradient(to top, #d4af37 -100%, rgba(21, 22, 37, 0) 64%);
 }
 
 .event-item .border-shadow.shadow-4 {
@@ -6064,8 +6076,8 @@ body .gamfi-explore-content .project-item {
   right: 5px;
   width: 200px;
   height: 5px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(-100%, #a3ff12), color-stop(64%, rgba(21, 22, 37, 0)));
-  background: linear-gradient(to left, #a3ff12 -100%, rgba(21, 22, 37, 0) 64%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(-100%, #d4af37), color-stop(64%, rgba(21, 22, 37, 0)));
+  background: linear-gradient(to left, #d4af37 -100%, rgba(21, 22, 37, 0) 64%);
 }
 
 .event-top {
@@ -6905,7 +6917,7 @@ body .gamfi-explore-content .project-item {
 }
 
 .article_details h2:hover {
-  color: #a3ff12;
+  color: #d4af37;
 }
 
 .article_details h2 span {
@@ -6998,7 +7010,7 @@ body .gamfi-explore-content .project-item {
   font-size: 30px;
   line-height: 50px;
   text-transform: uppercase;
-  color: #A3FF12;
+  color: #d4af37;
   margin-right: 10px;
 }
 
@@ -7115,7 +7127,7 @@ body .gamfi-explore-content .project-item {
 }
 
 .blog-detail-conent .blog-area .tokenomics-item .project-content .project-sale.springGreen:before {
-  background: #A3FF12;
+  background: #d4af37;
 }
 
 .blog-detail-conent .blog-area .tokenomics-item .project-content .project-sale.darkturquoise:before {
@@ -7566,7 +7578,7 @@ div.latest-item .hover-shape-bg {
   padding: 17px 0;
   width: 100%;
   text-transform: uppercase;
-  background: #A3FF12;
+  background: #d4af37;
   border: transparent;
   font-family: "Russo One", sans-serif;
 }
@@ -8532,19 +8544,19 @@ div.latest-item .hover-shape-bg {
 
 .expeand-menu ul li {
   display: inline-block;
-  color: #A3FF12;
+  color: #d4af37;
   font-size: 14px;
   margin-right: 30px;
 }
 
 .expeand-menu ul li i {
   font-size: 15px;
-  color: #A3FF12;
+  color: #d4af37;
   padding-left: 10px;
 }
 
 .expeand-centent .unit {
-  color: #A3FF12;
+  color: #d4af37;
   font-size: 22px;
   font-family: "Russo One", sans-serif;
 }
@@ -8775,7 +8787,7 @@ div.latest-item .hover-shape-bg {
   font-weight: 400;
   font-size: 16px;
   line-height: 50px;
-  color: #a3ff12;
+  color: #d4af37;
   text-transform: none;
 }
 
@@ -9459,7 +9471,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .tokenomics_list_sect ul li span.farming_pool {
-  background: #A3FF12;
+  background: #d4af37;
 }
 
 .tokenomics_list_sect ul li span.staking {
@@ -11064,7 +11076,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .gamfi_header_progress_bar .progress-bar {
-  background-color: #A3FF12;
+  background-color: #d4af37;
 }
 
 .kyc_form_sect {
@@ -12071,7 +12083,7 @@ div.latest-item .hover-shape-bg {
   font-weight: normal;
   font-size: 22px;
   line-height: 158%;
-  color: #A3FF12;
+  color: #d4af37;
   margin-bottom: 10px;
 }
 
@@ -12356,7 +12368,7 @@ div.latest-item .hover-shape-bg {
   width: 60px;
   height: 60px;
   border: 10px solid rgba(255, 255, 255, 0.1);
-  border-top: 10px solid #A3FF12;
+  border-top: 10px solid #d4af37;
   border-radius: 50%;
   -webkit-animation: pre_rotate 1.5s linear infinite;
           animation: pre_rotate 1.5s linear infinite;
@@ -12636,7 +12648,7 @@ div.latest-item .hover-shape-bg {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   font-family: "Russo One", sans-serif;
-  background: #A3FF12;
+  background: #d4af37;
   color: #090A1A;
   padding: 19px 50px;
 }
@@ -12683,7 +12695,7 @@ div.latest-item .hover-shape-bg {
 .view-project-btn {
   width: 200px;
   height: 60px;
-  background: #A3FF12;
+  background: #d4af37;
   outline: none;
   margin-right: 15px;
   display: -webkit-box;
@@ -12879,7 +12891,7 @@ div.latest-item .hover-shape-bg {
 /*--- buttons style ---*/
 .theme-btn {
   padding: 20px 50px;
-  background-color: #A3FF12;
+  background-color: #d4af37;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13114,8 +13126,8 @@ div.latest-item .hover-shape-bg {
 
 .gamfi-header-section .header-menu ul li a {
   display: block;
-  color: #FFFFFF;
-  font-family: "Russo One", sans-serif;
+  color: red;
+  font-family: "Pirate", sans-serif;
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -13382,7 +13394,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .progress-inner .progress-bar {
-  background-image: linear-gradient(60deg, #a3ff12 26%, transparent 25%, transparent 50%, #a3ff12 54%, #a3ff12 82%, transparent 75%, transparent);
+  background-image: linear-gradient(60deg, #d4af37 26%, transparent 25%, transparent 50%, #d4af37 54%, #d4af37 82%, transparent 75%, transparent);
 }
 
 .canvas-menu ul li {
@@ -13815,7 +13827,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .breadcrumbs-link:hover {
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 .breadcrumbs-form {
@@ -14346,7 +14358,7 @@ div.latest-item .hover-shape-bg {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #a3ff12;
+  background-color: #d4af37;
   opacity: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -14374,7 +14386,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .gamfi-footer-section .footer-area {
-  background: url("../images/bg/footer-bg.jpg");
+  background: black;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -14398,7 +14410,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .footer-cta-area .footer-link .subscribe {
-  background: #A3FF12;
+  background: #d4af37;
 }
 
 .footer-cta-area .footer-link .subscribe span {
@@ -14492,7 +14504,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .footer-mainmenu ul li a {
-  color: rgba(255, 255, 255, 0.7);
+  color: #d4af37;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -14775,7 +14787,7 @@ div.latest-item .hover-shape-bg {
 
 .gamfi-navigation ul li a.active:not(.black-shape), .gamfi-navigation ul li a:hover:not(.black-shape) {
   background: #2E2F3C;
-  color: #A3FF12;
+  color: #d4af37;
 }
 
 /*--- breadcrumb gamfi navigation section CSS ---*/
@@ -14825,7 +14837,7 @@ div.latest-item .hover-shape-bg {
 }
 
 .progress-line .progress-done.bg-theme {
-  background-color: #A3FF12;
+  background-color: #d4af37;
 }
 
 .progress-line .progress-done.bg-green {
@@ -14853,7 +14865,7 @@ div.latest-item .hover-shape-bg {
 
 .circle-progress-value {
   stroke-width: 6px;
-  stroke: #A3FF12;
+  stroke: #d4af37;
 }
 
 .circle-progress-circle {
